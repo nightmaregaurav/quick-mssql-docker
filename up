@@ -1,0 +1,15 @@
+#!/bin/bash
+
+export COMPOSE_PROJECT_NAME="local"
+
+if command -v docker-compose &> /dev/null; then
+    echo "[INFO] Using 'docker-compose'"
+    docker-compose up -d
+elif docker compose version &> /dev/null; then
+    echo "[INFO] Using 'docker compose'"
+    docker compose up -d
+else
+    echo "[ERROR] Neither 'docker-compose' nor 'docker compose' is available."
+    echo "Please install Docker Compose: https://docs.docker.com/compose/"
+    exit 1
+fi
