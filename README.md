@@ -1,2 +1,2 @@
 # quick-mssql-docker
-my setup to quickly install mssql docker instances for testing
+My setup to quickly install an MSSQL Docker instance.
