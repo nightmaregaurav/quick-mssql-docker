@@ -3,6 +3,7 @@ FROM ubuntu:jammy
 USER root
 
 RUN apt-get update
+RUN apt-get -yq upgrade
 RUN apt-get install -yq gnupg
 RUN apt-get install -yq gnupg1
 RUN apt-get install -yq gnupg2
@@ -18,7 +19,6 @@ RUN apt-get update
 RUN apt-get install -yq mssql-server
 RUN apt-get install -yq mssql-server-fts
 
-RUN apt-get install -yq systemctl
 RUN apt-get autopurge -y
 RUN apt-get clean
 
