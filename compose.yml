@@ -11,8 +11,8 @@ services:
       - "1433:1433"
     environment:
       ACCEPT_EULA: "Y"
-      MSSQL_SA_PASSWORD: "Admin@1433"
-      SA_PASSWORD: "Admin@1433"
+      MSSQL_SA_PASSWORD: "pass_dba"
+      SA_PASSWORD: "pass_dba"
       MSSQL_AGENT_ENABLED: "true"
       MSSQL_PID: "Developer"
     volumes:
