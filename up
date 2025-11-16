@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export COMPOSE_PROJECT_NAME="local"
+export COMPOSE_PROJECT_NAME="local_mssql"
 
 if command -v docker-compose &> /dev/null; then
     echo "[INFO] Using 'docker-compose'"
