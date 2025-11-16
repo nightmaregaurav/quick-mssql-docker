@@ -1,6 +1,6 @@
 version: "3.9"
 services:
-  sqlserver:
+  mssql:
     container_name: "mssql"
     hostname: "mssql"
     user: "root"
