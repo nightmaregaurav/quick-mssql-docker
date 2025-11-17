@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 ubuntu:jammy
+FROM mcr.microsoft.com/mssql/server:2022-latest
 
 USER root
 
